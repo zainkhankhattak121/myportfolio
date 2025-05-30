@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    /* Form status messages */
+.php-email-form .loading {
+  display: none;
+  color: #0066cc;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #dc3545;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #28a745;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Submit button styling */
+.php-email-form button[type="submit"] {
+  background: #0066cc;
+  color: #fff;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background: #0052a3;
+}
+  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/WhatsApp Image 2025-03-15 at 6.06.26 PM.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Zain Ul  Aabideen</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+    
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/WhatsApp Image 2025-03-15 at 6.05.11 PM.jpeg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Zain Ul Aabideen</h2>
+        <div style="width: 100%; text-align: left;">
+          <h3 style="margin: 0; font-size: 30px; font-weight: bold; color: #312f2f;">
+            Software Engineer
+          </h3>
+        </div>
+        
+        <p>I'm <span class="typed" data-typed-items="ML | NLP | Deep Learning expert, Android App Developer, Freelancer, ">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I am Zain Ul Aabideen, an expert in AI, machine learning, deep learning, voice processing, and Android development. I specialize in building cutting-edge AI solutions, deploying models seamlessly, and integrating them into mobile and web applications using frameworks like FastAPI, React Native, and more.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/WhatsApp Image 2025-03-15 at 6.06.26 PM.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>AI & ML Expert &amp; Android Developer.</h2>
+            <p class="fst-italic py-3">
+              I am passionate about leveraging AI and machine learning to build intelligent and efficient solutions. With expertise in deep learning, voice processing, and Android development, I seamlessly integrate AI models into mobile Apps using cutting-edge frameworks like FastAPI and React Native. My goal is to create innovative and scalable solutions that enhance user experiences and drive technological advancements.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>23 April 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+923430912433</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Attock, Punjab</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>bachelor of science in SE</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>zainkhankhattak3@gmail.com</span></li>
+                  
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              An expert in <strong>AI, machine learning, deep learning, and voice processing</strong>, specializing in 
+              <strong>AI model development, deployment, and integration</strong> into mobile and web applications using 
+              <strong>FastAPI, React Native</strong>, and more.  
+            
+              With experience in <strong>7+ text models, 5 image models, and 2 audio models</strong>, I have trained 
+              <strong>30+ models</strong>, including achieving <strong>99% accuracy in deepfake audio detection</strong>. 
+              As a <strong>Level 1 Fiverr Seller</strong>, I excel in <strong>app development, Wix, speech recognition, 
+              voice cloning, and TTS</strong>. Skilled in <strong>PyTorch, TensorFlow, Keras, and Generative AI</strong>, 
+              I bring <strong>cutting-edge solutions</strong> to AI-driven applications.
+            </p>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Android App Projects</strong></p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>AI/ML/DL practic Projects</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>My skills include </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Machine Learning</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Deep Learning</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>NLP</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>Generative AI Models</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Image Processing</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Text-to-Speech</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>React Native App Development</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill"><span>FastApi</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume 
+          <a href="assets/img/deepfake/Zain fresh Resume.pdf  " download="Zain_Ul_Aabideen_Resume.pdf" 
+             style="margin-left: 10px; color: #007bff; text-decoration: none;">
+            <i class="fa fa-download" style="font-size: 18px;"></i>
+          </a>
+        </h2>
+        
+        
+        <p style="text-align: center; font-size: 16px; color: #555;">
+          A passionate Software Engineering student skilled in programming and machine learning, eager to apply knowledge in real-world projects.
+        </p>
+      </div><!-- End Section Title -->
+<div class="container">
+  <!-- Header Section -->
+  <div class="row mb-4">
+    <div class="col-12 text-center" data-aos="fade-up">
+      <h1>ZAIN UL AABIDEEN</h1>
+      <p class="contact-info">
+        📧 zainkhankhattak3@gmail.com | 📱 0343-0912433<br>
+        🔗 LinkedIn: <a href="https://www.linkedin.com/in/zain-ul-aabideen-khan-793281210" target="_blank">www.linkedin.com/in/zain-ul-aabideen-khan-793281210</a><br>
+        🌐 Portfolio: <a href="http://zainulaabideen-001-site1.anytempurl.com" target="_blank">http://zainulaabideen-001-site1.anytempurl.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Left Column (Profile, Education, Skills) -->
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="resume-title">Professional Summary</h3>
+      <div class="resume-item pb-0">
+        <p><em>I am a Software Engineering graduate from COMSATS University Islamabad with strong hands-on experience in AI, Machine Learning, Deep Learning, and Android Development. I have a proven track record of delivering intelligent systems using PyTorch, TensorFlow, and React Native. A quick learner and adaptive developer, I also maintain a solid freelancing profile on Fiverr. Passionate about developing voice-based AI and mobile applications, I am eager to apply my skills to innovative industry projects and real-world challenges.</em></p>
+      </div>
+
+      <h3 class="resume-title">Technical Skills</h3>
+      <div class="resume-item">
+        <ul>
+          <li><strong>Languages & Frameworks:</strong> Python, React Native, JavaScript, FastAPI, Keras, Scikit-learn</li>
+          <li><strong>AI & ML:</strong> PyTorch, TensorFlow, Hugging Face, LLMs, Transformer Models</li>
+          <li><strong>Tools:</strong> Firebase, Wix, VS Code, Kaggle</li>
+          <li><strong>Soft Skills:</strong> Communication, Leadership, Teamwork</li>
+        </ul>
+      </div>
+
+      <h3 class="resume-title">Education</h3>
+      <div class="resume-item">
+        <h4>Bachelor of Science in Software Engineering</h4>
+        <h5>2021 - 2025</h5>
+        <p><em>COMSATS University Islamabad – Attock Campus</em></p>
+      </div>
+      
+      <div class="resume-item">
+        <h4>Matric (ICS)</h4>
+        <h5>2018 - 2021</h5>
+        <p><em>Quaid-e-Azam Group of School and College</em></p>
+      </div>
+
+      <h3 class="resume-title">Experience</h3>
+      <div class="resume-item">
+        <h4>Freelancer & Fiverr Level 1 Seller</h4>
+        <h5>2022 - Present</h5>
+        <p><em>Remote</em></p>
+        <ul>
+          <li>Delivered AI, React Native, and Wix projects to global clients</li>
+          <li>Completed 10+ ML projects, 3 Deep Learning, and 2 NLP applications</li>
+          <li>Specialized in speech recognition, TTS, and mobile apps</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>Machine Learning Intern</h4>
+        <h5>Jul 2024 - Sep 2024</h5>
+        <p><em>CondexCue Software Solution (Remote)</em></p>
+        <ul>
+          <li>Focused on model development, feature engineering, and hyperparameter tuning</li>
+          <li>Worked with Python, Scikit-learn, and real-world datasets</li>
+        </ul>
+      </div>
+    </div><!-- End Left Column -->
+
+    <!-- Right Column (Projects, Certifications) -->
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="resume-title">Project Highlights</h3>
+      
+      <div class="resume-item">
+        <h4>Deep Fake Audio Detection & Generation <small>(FYP)</small></h4>
+        <ul>
+          <li>Built a system to classify real vs. synthetic audio and generate deepfake speech using advanced models.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>EYE-R App <small>(App for Colorblind Persons)</small></h4>
+        <ul>
+          <li>A React Native app to assist colorblind users via live and image-based color recognition.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>Prayer Record App</h4>
+        <ul>
+          <li>Location-aware React Native app for tracking prayer times and streaks.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>Hostel Recommendation Engine</h4>
+        <ul>
+          <li>ML-powered system using collaborative filtering to suggest hostels based on user Location.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>Brain Tumor Detection</h4>
+        <ul>
+          <li>Achieved 99.9% accuracy using CNN-based image classification.</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h4>Diabetes Prediction App</h4>
+        <ul>
+          <li>Risk assessment tool using patient data and ML models with an intuitive UI.</li>
+        </ul>
+      </div>
+
+      <h3 class="resume-title">Certifications & Achievements</h3>
+      <div class="resume-item">
+        <ul>
+          <li>2x Fiverr Level 1 Seller – Delivered 20+ successful freelance projects</li>
+          <li>Built Transformer-based NLP Solutions – Text classification, summarization</li>
+          <li>AI Competition Finalist – Participated in university-level AI challenges</li>
+        </ul>
+      </div>
+
+      <h3 class="resume-title">Languages</h3>
+      <div class="resume-item">
+        <ul>
+          <li>English – Fluent</li>
+          <li>Urdu – Native</li>
+        </ul>
+      </div>
+    </div><!-- End Right Column -->
+  </div><!-- End Row -->
+</div><!-- End Container -->
+    
+    </section><!-- /Resume Section -->
+    
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>
+  I am a <strong>Software Engineering graduate</strong> from <strong>COMSATS University Islamabad</strong> with strong hands-on experience in 
+  <strong>AI, Machine Learning, Deep Learning</strong>, and <strong>Android Development</strong>. I have a proven track record of delivering 
+  intelligent systems using <strong>PyTorch</strong>, <strong>TensorFlow</strong>, and <strong>React Native</strong>. A quick learner and 
+  adaptive developer, I also maintain a solid freelancing profile on <strong>Fiverr</strong>. Passionate about developing 
+  <strong>voice-based AI</strong> and <strong>mobile applications</strong>, I am eager to apply my skills to innovative 
+  <strong>industry projects</strong> and <strong>real-world challenges</strong>.
+</p>
+
+
+      </div><!-- End Section Title -->
+
+
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Android Apps</li>
+            <li data-filter=".filter-ml">ML|DL|NLP</li>
+            <li data-filter=".filter-wix">Wix</li>
+          </ul><!-- End Portfolio Filters -->
+      
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      
+            <!-- Apps -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/deepfake/photo-collage.png.png" class="img-fluid" alt="Deepfake Audio Detection and Generation" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>Deepfake Audio Detection and Generation</h4>
+                  <p>An app to detect and generate deepfake audio using advanced AI techniques.</p>
+                  <a href="assets/img/portfolio/deepfake-audio.png" title="Deepfake Audio" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/newassets/20250322_035240.jpg" class="img-fluid" alt="EYE-R" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>EYE-R</h4>
+                  <p>An app for eye-related health tracking and diagnostics.</p>
+                  <a href="assets/img/portfolio/newassets/20250322_035240.jpg" title="EYE-R" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="EYE.html" title="More Details" class="details-link"> <i class="bi bi-link-45deg"> </i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/newassets/20250322_035240.jpg" class="img-fluid" alt="Prayer Timing App" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>Prayer Timing App</h4>
+                  <p>An app to provide accurate prayer timings based on location.</p>
+                  <a href="assets/img/portfolio/newassets/20250322_035240.jpg" title="Prayer Timing App" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Prayer_Timing_App.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/newassets/mqtt/IMG-20250322-WA0006.jpg" class="img-fluid" alt="MQTT" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>MQTT</h4>
+                  <p>An app for IoT communication using the MQTT protocol.</p>
+                  <a href="assets/img/portfolio/newassets/mqtt/IMG-20250322-WA0006.jpg" title="MQTT" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="MQTT.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+  
+      
+            <!-- Wix Projects -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wix">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/newassets/TNS bridal service/Screenshot 2025-02-06 at 1.50.27 AM.png" class="img-fluid" alt="TNS Bridal Service" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>TNS Bridal Service</h4>
+                  <p>A Wix-based website for bridal services and bookings.</p>
+                  <a href="assets/img/portfolio/newassets/TNS bridal service/Screenshot 2025-02-06 at 1.50.27 AM.png" title="TNS Bridal Service" data-gallery="portfolio-gallery-wix" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="TNS Bridal Service.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wix">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/newassets/coffeeshop/Screenshot 2025-03-22 at 1.11.23 PM.png" class="img-fluid" alt="My Coffee Shop" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>My Coffee Shop</h4>
+                  <p>A Wix-based website for a coffee shop with online ordering.</p>
+                  <a href="assets/img/portfolio/newassets/coffeeshop/Screenshot 2025-03-22 at 1.11.23 PM.png" title="My Coffee Shop" data-gallery="portfolio-gallery-wix" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="My Coffee Shop.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wix">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/newassets/E_store/Screenshot 2025-03-22 at 1.16.27 PM.png" class="img-fluid" alt="E-Store" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>E-Store</h4>
+                  <p>A Wix-based e-commerce platform for online shopping.</p>
+                  <a href="assets/img/portfolio/newassets/E_store/Screenshot 2025-03-22 at 1.16.27 PM.png" title="E-Store" data-gallery="portfolio-gallery-wix" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="E-Store.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wix">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/newassets/coffeeshop/Screenshot 2025-03-22 at 1.13.34 PM.png" class="img-fluid" alt="E-Store" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>Watch Store</h4>
+                  <p>A Wix-based e-commerce platform for online shopping.</p>
+                  <a href="assets/img/portfolio/newassets/coffeeshop/Screenshot 2025-03-22 at 1.13.34 PM.png" title="E-Store" data-gallery="portfolio-gallery-wix" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="wachstore.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+      
+            <!-- ML/DL/NLP Projects -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/Screenshot 2025-05-29 at 3.40.03 PM.png" class="img-fluid" alt="Brain Tumor Detection" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>Brain Tumor Detection</h4>
+                  <p>A machine learning model to detect brain tumors from MRI scans.</p>
+                  <a href="assets/img/portfolio/brain-tumor.png" title="Brain Tumor Detection" data-gallery="portfolio-gallery-ml" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Brain Tumor Detection.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/wavvec2/Screenshot 2025-05-30 at 12.44.40 AM.png" class="img-fluid" alt="Fraud Detection" style="width: 100%; height: 300px; object-fit: contain;">
+                <div class="portfolio-info">
+                  <h4>Fake or Real voice</h4>
+                  <p>A self-supervised deep learning model for speech processing.</p>
+                  <a href="assets/img/portfolio/fraud-detection.png" title="Fraud Detection" data-gallery="portfolio-gallery-ml" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="Fraud Detection.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+          </div><!-- End Portfolio Container -->
+        </div>
+      </div>
+      
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="ML_service.html" class="stretched-link">Develop ML||DL||NLP Models and integrate with apps</a></h4>
+              <p class="description">Develop and integrate AI-powered models (Machine Learning, Deep Learning, Natural Language Processing) with applications to enable intelligent automation and decision-making capabilities</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="app_service.html" class="stretched-link">Develop Mobile App for IOS and Android using React Native</a></h4>
+              <p class="description">Design and develop a cross-platform mobile app for iOS and Android devices using React Native, ensuring seamless user experience and efficient performance</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="Wix_service.html" class="stretched-link">Design or Redesign a High Converting Wix Website</a></h4>
+              <p class="description">Create a visually stunning and highly converting Wix website, optimized for user experience and search engine ranking, to drive business growth and online success.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reviews</h2>
+        <p>Excellent service and outstanding results!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>He is easy and great to work with.Flexable with Communication and understanding Design Concepts.great job!.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/clients images/D377B7A3-358F-494D-B938-5372ADA12385.jpeg" class="testimonial-img" alt="">
+                <h3>Curreda</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>un developpeur serieux et competent </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/clients images/images.jpeg" class="testimonial-img" alt="">
+                <h3>Fettahmouslim</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Highly skilled and innovative AI and app developer. Delivered exceptional results with a passion for excellence. Highly recommended for any project!.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/clients images/images.jpeg" class="testimonial-img" alt="">
+                <h3>Haider Abbas</h3>
+                <h4>Student</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+           
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Farooq-e-Azam Colony, Street No. 3
+                    District Attock, Punjab
+                    Pakistan</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+923430912433</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p>zainkhankhattak3@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d110502.60389525133!2d72.242058!3d33.880661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1719371268712!5m2!1sen!2s" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="https://api.web3forms.com/submit"  method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <input type="hidden" name="access_key" value="68596352-022b-49f9-9b5c-2446bf4a2436">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('.php-email-form');
+      
+      if (form) {
+        const loading = form.querySelector('.loading');
+        const errorMessage = form.querySelector('.error-message');
+        const sentMessage = form.querySelector('.sent-message');
+        const submitButton = form.querySelector('button[type="submit"]');
+    
+        // Initially hide all status messages
+        loading.style.display = 'none';
+        errorMessage.style.display = 'none';
+        sentMessage.style.display = 'none';
+    
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Show loading, hide other messages and disable submit button
+          loading.style.display = 'block';
+          errorMessage.style.display = 'none';
+          sentMessage.style.display = 'none';
+          submitButton.disabled = true;
+          
+          // Get form data
+          const formData = new FormData(form);
+          
+          // Submit to Web3Forms
+          fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            loading.style.display = 'none';
+            if (data.success) {
+              sentMessage.style.display = 'block';
+              form.reset();
+              // Scroll to success message
+              sentMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+              throw new Error(data.message || 'Form submission failed');
+            }
+          })
+          .catch(error => {
+            loading.style.display = 'none';
+            errorMessage.style.display = 'block';
+            errorMessage.textContent = error.message || 'There was a problem submitting your form. Please try again.';
+            // Scroll to error message
+            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          })
+          .finally(() => {
+            submitButton.disabled = false;
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
